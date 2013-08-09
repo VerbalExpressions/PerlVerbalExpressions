@@ -7,7 +7,6 @@ is verex->add('^$'), '^$';
 
 {
     my $re = verex->start_of_line->range('a' => 'c')->regex;
-    is $re, qr/(?^:^[a-c])/;
     for my $c ('a'..'c') {
         like $c, $re;
     }
