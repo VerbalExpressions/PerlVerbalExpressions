@@ -52,5 +52,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/VerbalExpressions/PerlVerbalExpressions/issues"
+      },
+      "homepage" : "https://github.com/VerbalExpressions/PerlVerbalExpressions",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/VerbalExpressions/PerlVerbalExpressions.git",
+         "web" : "https://github.com/VerbalExpressions/PerlVerbalExpressions"
+      }
+   },
    "version" : "0.01"
 }
