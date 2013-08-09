@@ -1,10 +1,10 @@
 # NAME
 
-Regexp::VerbalExpression - Perl Regular expressions made easy
+Regexp::VerbalExpressions - Perl Regular expressions made easy
 
 # SYNOPSIS
 
-    use Regexp::VerbalExpression;
+    use Regexp::VerbalExpressions;
 
     # Create an example of how to test for correctly formed URLs
     my $re = verex
@@ -26,7 +26,7 @@ Regexp::VerbalExpression - Perl Regular expressions made easy
 
 # DESCRIPTION
 
-Regexp::VerbalExpression is a Perl module that helps to construct difficult regular expressions.
+Regexp::VerbalExpressions is a Perl module that helps to construct difficult regular expressions.
 
 # API
 

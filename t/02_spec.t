@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use Test::More;
-use Regexp::VerbalExpression;
+use Regexp::VerbalExpressions;
 
 # https://github.com/jehna/VerbalExpressions/wiki
 

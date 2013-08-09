@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use Test::More;
-use Regexp::VerbalExpression;
+use Regexp::VerbalExpressions;
 
 is verex->add('^$'), '^$';
 
