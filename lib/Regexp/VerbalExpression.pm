@@ -183,6 +183,84 @@ Regexp::VerbalExpression - Perl Regular expressions made easy
 
 Regexp::VerbalExpression is a Perl module that helps to construct difficult regular expressions.
 
+=head1 API
+
+=head2 Modifiers
+
+=over 4
+
+=item C<< anything() >>
+
+=item C<< anything_but($value) >>
+
+=item C<< end_of_line() >>
+
+=item C<< find($value) >>
+
+=item C<< maybe($value) >>
+
+=item C<< start_of_line() >>
+
+=item C<< then($value) >>
+
+=back
+
+=head2 Special characters and groups
+
+=over 4
+
+=item C<< any($value) >>
+
+=item C<< any_of($value) >>
+
+=item C<< br() >>
+
+=item C<< line_break() >>
+
+=item C<< range($from, $to) >>
+
+=item C<< tab() >>
+
+=item C<< word() >>
+
+=back
+
+=head2 Modifiers
+
+=over 4
+
+=item C<< with_any_case() >>
+
+=item C<< stop_at_first() >>
+
+=item C<< search_one_line() >>
+
+=back
+
+=head2 Functions
+
+=over 4
+
+=item C<< replace($source, $value) >>
+
+=back
+
+=head2 Other
+
+=over 4
+
+=item C<< add($expression) >>
+
+=item C<< multiple($value) >>
+
+=item C<< or() >>
+
+=back
+
+=head1 SEE ALSO
+
+L<https://github.com/VerbalExpressions/JSVerbalExpressions>
+
 =head1 LICENSE
 
 Copyright (C) Takumi Akiyama.
