@@ -5,7 +5,7 @@ use warnings;
 use parent qw/Exporter/;
 use overload fallback => 1, q{""} => \&source, 'qr' => \&regex;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 our @EXPORT = qw/verex/;
 

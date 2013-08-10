@@ -2,6 +2,10 @@ Revision history for Perl extension Regexp-VerbalExpressions
 
 {{$NEXT}}
 
+0.02 2013-08-10T02:25:58Z
+    - fix for perl-5.13.6 or less
+    - add something(), something_but()
+
 0.01 2013-08-09T10:10:21Z
 
     - original version

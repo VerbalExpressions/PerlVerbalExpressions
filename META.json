@@ -42,6 +42,7 @@
       },
       "runtime" : {
          "requires" : {
+            "parent" : "0",
             "perl" : "5.008005"
          }
       },
@@ -63,5 +64,5 @@
          "web" : "https://github.com/VerbalExpressions/PerlVerbalExpressions"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
