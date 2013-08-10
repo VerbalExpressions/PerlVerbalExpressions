@@ -82,6 +82,16 @@ sub anything_but {
     return $self->add('(?:[^' . quotemeta($value) . ']*)');
 }
 
+sub something {
+    my $self = shift;
+    return $self->add('(?:.+)');
+}
+
+sub something_but {
+    my ($self, $value) = @_;
+    return $self->add('(?:[^' . quotemeta($value) . ']+)');
+}
+
 sub line_break {
     my $self = shift;
     return $self->add('(?:\n|(?:\r\n))');
