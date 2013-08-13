@@ -66,9 +66,8 @@ Regexp::VerbalExpressions is a Perl module that helps to construct difficult reg
 - `multiple($value)`
 - `or()`
 
-# SEE ALSO
-
-[https://github.com/VerbalExpressions/JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
+## Other implementations  
+You can view all implementations on [VerbalExpressions.github.io](http://VerbalExpressions.github.io)
 
 # LICENSE
 
