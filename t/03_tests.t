@@ -52,6 +52,11 @@ subtest 'any_of' => sub {
     unlike 'abc', $re;
 };
 
+subtest 'multiple' => sub {
+    like "aaa", verex->multiple('a')->regex;
+    unlike "", verex->multiple('a')->regex;
+};
+
 subtest 'or' => sub {
     my $re = verex->start_of_line->then('abc')->or('def')->regex;
     like 'defzzz', $re;
@@ -84,6 +89,13 @@ subtest 'with_any_case' => sub {
     my $re = verex->start_of_line->then('a')->with_any_case->regex;
     like 'A', $re;
     like 'a', $re;
+
+    unlike 'A', verex->start_of_line->then('a')->with_any_case(0)->regex;
+};
+
+subtest 'stop_at_first' => sub {
+    is verex->tab->stop_at_first->replace("\tabc\t", ''), "abc";
+    is verex->tab->stop_at_first(0)->replace("\tabc\t", ''), "abc\t";
 };
 
 subtest 'search_one_line' => sub {

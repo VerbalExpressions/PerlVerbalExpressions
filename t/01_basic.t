@@ -80,7 +80,6 @@ like 'mail@mail.com', verex->start_of_line->word->then('@')->word->then('.')->wo
 like 'https://www.google.com/', verex->start_of_line->then('http')->maybe('s')->then('://')->maybe('www.')->word->then('.')->word->maybe('/')->end_of_line->regex;
 
 is verex->start_of_line->tab->replace("\tabc\t", ''), "abc\t";
-is verex->tab->stop_at_first(1)->replace("\tabc\t", ''), "abc";
 is verex->find('A')->with_any_case(1)->stop_at_first(1)->replace("abcabc", ''), "bcbc";
 
 done_testing;
