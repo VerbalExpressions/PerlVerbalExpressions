@@ -1,0 +1,2 @@
+name = "Regexp-VerbalExpressions"
+badges = ["travis", "coveralls"]

@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/VerbalExpressions/PerlVerbalExpressions.png?branch=master)](https://travis-ci.org/VerbalExpressions/PerlVerbalExpressions) [![Coverage Status](https://coveralls.io/repos/VerbalExpressions/PerlVerbalExpressions/badge.png?branch=master)](https://coveralls.io/r/VerbalExpressions/PerlVerbalExpressions?branch=master)
 # NAME
 
 Regexp::VerbalExpressions - Perl Regular expressions made easy
