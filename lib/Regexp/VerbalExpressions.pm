@@ -207,6 +207,11 @@ Regexp::VerbalExpressions - Perl Regular expressions made easy
 
 Regexp::VerbalExpressions is a Perl module that helps to construct difficult regular expressions.
 
+
+=head2 Other implementations
+
+You can view all implementations on L<http://VerbalExpressions.github.io|VerbalExpressions.github.io>
+
 =head1 API
 
 =head2 Modifiers
