@@ -149,12 +149,8 @@ sub replace {
 
 sub _build_modifier {
     my ($self, $modifier, $value) = @_;
-    if (!defined $value) {
-        # XXX verex->with_any_case;
-        $self->{modifiers}{$modifier} = 1;
-    } else {
-        $self->{modifiers}{$modifier} = $value ? 1 : 0;
-    }
+    $value = 1 unless defined $value;
+    $self->{modifiers}{$modifier} = $value ? 1 : 0;
 }
 
 sub with_any_case {
@@ -165,11 +161,8 @@ sub with_any_case {
 
 sub stop_at_first {
     my ($self, $value) = @_;
-    if (!defined $value) {
-        $self->{global_matching} = 1;
-    } else {
-        $self->{global_matching} = $value ? 1 : 0;
-    }
+    $value = 1 unless defined $value;
+    $self->{global_matching} = $value ? 1 : 0;
     return $self;
 }
 
